@@ -1,0 +1,2745 @@
+.modal-open {
+    overflow: hidden;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    position: relative;
+    width: 402px;
+    margin: 66px auto 0;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #f5f5f5;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #000;
+}
+
+.modal-backdrop.fade {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .7;
+}
+
+.modal-header {
+    background: #e1e1e1;
+    padding: 20px 30px 24px 30px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-header .close {
+    margin-top: 8px;
+    float: right;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 32px;
+    font-size: 24px;
+    color: #555555;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.modal-body {
+    position: relative;
+    padding: 20px 30px 10px;
+    background: #f5f5f5;
+}
+
+.modal-footer {
+    padding: 30px 0 29px;
+    text-align: center;
+    background: #e1e1e1;
+}
+
+.modal-footer span {
+    line-height: 20px;
+    font-size: 16px;
+    color: #707070;
+    font-weight: 600;
+}
+
+.modal-footer span, .modal-footer a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+}
+
+/* Signup Modal ---------------------- */
+#signupModal .modal-dialog {
+    width: 702px;
+    margin: 20px auto 0;
+
+}
+
+#signupModal .form-default .form-control {
+    width: 60%;
+}
+
+#signupModal .form-default .smallInput {
+    width: 26%;
+}
+
+#signupModal .form-default input[type="submit"] {
+    width: 60%;
+}
+
+#signupModal .other-login-options a {
+    width: 49%;
+}
+
+#signupModal .other-login-options .btn-red-only, #signupModal .other-login-options .btn-dark-blue-only, #loginModal .other-login-options .btn-dark-blue-only, .other-login-options .btn-dark-blue-only {
+    clear: both;
+    margin: 0 auto;
+}
+
+#signupModal .other-login-options .btn-sky-blue .twitter2-icon, #loginModal .other-login-options .btn-sky-blue .twitter2-icon, .other-login-options .btn-sky-blue .twitter2-icon {
+    margin-right: 1px;
+    margin-bottom: 0;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+
+#loginModal .modal-dialog {
+    margin: 20px auto 0;
+}
+
+/* Nav Tabs ---------------------- */
+.nav-tabs {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-tabs li {
+    float: left;
+    width: 50%;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-tabs li a {
+    font-size: 16px;
+    line-height: 43px;
+    font-weight: 600;
+    width: 100%;
+    border: 1px solid #0086e4;
+    display: block;
+}
+
+.nav-tabs li.active a, .nav-tabs li:hover a {
+    background: #0086e4;
+    color: #fff;
+}
+
+.nav-tabs li .bloggerBlue-icon {
+    margin-right: 12px;
+    vertical-align: sub;
+}
+
+.nav-tabs li .brandBlue-icon {
+    margin-right: 14px;
+    vertical-align: text-top;
+}
+
+.nav-tabs li.active .bloggerBlue-icon, .nav-tabs li:hover .bloggerBlue-icon {
+    background-position: -341px 0;
+}
+
+.nav-tabs li.active .brandBlue-icon, .nav-tabs li:hover .brandBlue-icon {
+    background-position: -285px 0;
+}
+
+/* Error Modal ---------------------- */
+.error-window .modal-body {
+    background: #fff;
+}
+
+#errorModal .modal-body, .error-window .modal-body {
+    padding: 40px 55px;
+    border-top: 5px solid #d53030;
+    text-align: center;
+}
+
+#errorModal .modal-dialog, .error-window .modal-dialog {
+    top: 25%;
+    left: 50%;
+    margin-top: -107px;
+    margin-left: -208px;
+    position: absolute;
+}
+
+#errorModal p, .error-window p, .error-window li {
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+    margin-bottom: 20px;
+    width: 240px;
+    float: right;
+    text-align: left;
+}
+
+.error-window ul, .error-window li {
+    margin-bottom: 10px;
+}
+
+.error-window ul {
+    float: right;
+    margin-right: -15px;
+    width: 258px;
+}
+
+#errorModal #body-error ul {
+    padding-left: 15px;
+}
+
+.error-window .big-cross-icon {
+    float: left;
+}
+
+#errorModal {
+    z-index: 999999;
+}
+
+/* Steps Modal Common Settings ---------------------- */
+.stepModal .modal-dialog {
+    width: 702px;
+}
+
+.stepModal .modal-header {
+    background: #f5f5f5;
+    border-bottom: none;
+    padding: 30px 30px 0;
+}
+
+.stepModal .modal-title {
+    margin-bottom: 0;
+}
+
+.stepModal .form-default ul li {
+    text-align: center;
+    margin-bottom: 38px;
+    float: none;
+    width: auto;
+}
+
+.stepModal .checkboxDiv {
+    display: inline-block;
+    float: none;
+}
+
+.stepModal .checkboxDiv .doc-icon {
+    background-position: -124px -37px
+}
+
+.stepModal .checkboxDiv.checked .doc-icon {
+    background-position: -316px -59px;
+}
+
+.stepModal .checkboxDiv.checked .music-icon {
+    background-position: -294px -61px;
+}
+
+.stepModal .form-default textarea, .stepModal .form-default input[type="text"] {
+    width: 466px;
+    height: 176px;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 12px;
+    color: #464646;
+    resize: none;
+    text-align: left;
+}
+
+.stepModal .form-default input[type="text"] {
+    height: 43px;
+}
+
+.stepModal .form-default input[type="submit"], .stepModal .form-default input[type="button"] {
+    display: inline-block;
+}
+
+#selectCategoryModal .modal-dialog {
+    width: 1024px;
+}
+
+#selectCategoryModal .checkboxDiv {
+    float: left;
+    width: 240px;
+    margin-bottom: 38px;
+}
+
+#selectCategoryModal .checkboxDiv label {
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+#selectCategoryModal .form-default ul li {
+    text-align: left;
+}
+
+#selectCategoryModal .form-default ul li.btn-submit {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#selectCategoryModal .modal-body {
+    padding-bottom: 50px;
+}
+
+/* Category Modal ---------------------- */
+#categoryModal .form-default ul li {
+    margin: 0 auto 38px;
+    width: 400px;
+}
+
+#categoryModal .form-default ul li input[type="button"] {
+    display: inline-block;
+}
+
+/* Filter Modal ---------------------- */
+.filterModal .modal-body {
+    padding: 20px 20px 25px
+}
+
+.filterModal .modal-header {
+    background: #f5f5f5 !important;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 27px 20px 0;
+}
+
+.filterModal .modal-title h4 {
+    margin-bottom: 0;
+}
+
+.filterModal .checkboxDiv {
+    width: 115px;
+    margin-top: 8px;
+}
+
+#filterModalCampaign .checkboxDiv {
+    width: 130px;
+    margin-bottom: 10px;
+}
+
+#filterModalAll .all-filters-field .checkboxDiv {
+    margin-bottom: 10px;
+    width: 130px;
+}
+
+#filterModalCampaign .checkboxDiv label .doc-icon, #filterModalAll .all-filters-field .checkboxDiv label .doc-icon {
+    width: 14px;
+}
+
+#filterModalCampaign .checkboxDiv.last, #filterModalAll .all-filters-field .checkboxDiv.last {
+    width: 106px;
+    float: right;
+}
+
+#filterModalCampaign .checkboxDiv label .music-icon, #filterModalAll .all-filters-field .checkboxDiv label .music-icon {
+    width: 19px;
+}
+
+.filterModal label {
+    display: block;
+    font-size: 14px;
+    line-height: 31px;
+    color: #707070;
+    font-weight: 600;
+}
+
+.filterModal .checkboxDiv label, .filterModal .form-default li {
+    font-size: 16px;
+    color: #707070;
+    font-weight: 600;
+}
+
+.filterModal .checkboxDiv label .sprite {
+    margin-right: 5px;
+}
+
+.filterModal .checkboxDiv label {
+    line-height: 22px;
+}
+
+.filterModal .form-default li {
+    margin-bottom: 15px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.filterModal .form-default .filtered-section ul li {
+    margin-bottom: 7px;
+}
+
+.filterModal #blogIndexView {
+    font-weight: 700;
+}
+
+.filterModal .form-default input[type="submit"] {
+    width: 150px;
+    margin: 20px auto 0;
+    display: block;
+}
+
+.filterModal .form-default .checkbox {
+    float: left;
+    margin-top: 0px;
+    width: 30%;
+}
+
+.filterModal .form-default .selectbox select {
+    color: #acacac;
+    font-weight: normal;
+    padding-left: 5px;
+
+}
+
+.filterModal .form-default .selectbox {
+    width: auto;
+    margin-bottom: 13px;
+    margin-top: 8px;
+}
+
+.filterModal .select2-container {
+    padding: 0;
+}
+
+/* signUpStep2 Modal ---------------------- */
+#signUpStep2Model .modal-dialog {
+    width: 700px;
+}
+
+#signUpStep2Model .modal-header {
+    background: #f5f5f5 !important;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+#signUpStep2Model .modal-body {
+    background: #f5f5f5 !important;
+    border-bottom: 1px solid #f5f5f5;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+}
+
+#signUpStep2Model .checkboxDiv {
+    width: 50%;
+}
+
+#signUpStep2Model .category {
+    margin: auto 0 0 20%
+}
+
+/* bloggerverify Modal ---------------------- */
+#bloggerverifyModel .modal-dialog {
+    width: 700px;
+}
+
+#bloggerverifyModel .modal-header {
+    background: #f5f5f5 !important;
+    border-bottom: 1px solid #f5f5f5;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#bloggerverifyModel .modal-body {
+    background: #f5f5f5 !important;
+    border-bottom: 1px solid #f5f5f5;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+}
+
+#bloggerverifyModel .checkboxDiv {
+    width: 70%;
+    float: none;
+    margin: auto;
+}
+
+/* bloggerAddress Modal ---------------------- */
+#bloggerAddressModel .modal-header {
+    background: #f5f5f5 !important;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+#bloggerAddressModel .modal-body {
+    background: #f5f5f5 !important;
+    border-bottom: 1px solid #f5f5f5;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+}
+
+#bloggerAddressModel .modal-dialog {
+    width: 700px;
+}
+
+#bloggerAddressModel .checkboxDiv {
+    width: 70%;
+    float: none;
+    margin: auto;
+}
+
+/* Blogscore Modal ---------------------- */
+#blogscoreModel, #forgotPasswordInfo, #forgotPassword {
+    padding-top: 130px;
+}
+
+#blogscoreModel .modal-header, #forgotPasswordInfo .modal-header, #forgotPassword .modal-header, #editEmail .modal-header {
+    background: #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+    padding-bottom: 0;
+}
+
+#testimonialSuccessModal .close {
+    position: absolute;
+    right: 10px;
+    z-index: 99;
+    top: 15px;
+}
+
+#testimonialSuccessModal .successContent strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#blogscoreModel .modal-body, #forgotPasswordInfo .modal-body, #forgotPassword .modal-body, #editEmail .modal-body {
+    background: #f5f5f5;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+
+}
+
+#blogscoreModel .modal-body p, #forgotPasswordInfo .modal-body p, #forgotPassword .modal-body p, #editEmail .modal-body p, .modal-body p {
+    margin-bottom: 30px;
+    color: #555555;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#forgotPasswordInfo #maskedEmail {
+    width: 170px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+#forgotPasswordInfo .form-default input.btn-navy {
+    padding: 5px 30px;
+}
+
+/* AddAnotherBlogModal Modal ---------------------- */
+#addAnotherBlogModal .modal-dialog {
+    margin-top: 130px;
+    width: 858px;
+}
+
+#addAnotherBlogModal .modal-header {
+    padding-bottom: 0;
+}
+
+#addAnotherBlogModal .modal-body {
+    padding-top: 0;
+}
+
+#addAnotherBlogModal .form-default {
+    width: 100%;
+}
+
+#addAnotherBlogModal .form-default .sprite {
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-left: 10px;
+    margin-top: -2px;
+}
+
+#addAnotherBlogModal .form-default .text-center {
+    margin-top: 50px;
+}
+
+#addAnotherBlogModal .form-default .remove-icon {
+    float: right;
+}
+
+#addAnotherBlogModal .form-default .blog-icon {
+    margin-left: 13px;
+    margin-right: 12px;
+}
+
+#addAnotherBlogModal .form-default .wordpress-icon {
+    margin-right: 9px;
+    margin-left: 11px;
+}
+
+#addAnotherBlogModal .form-default ul li {
+    width: 280px;
+}
+
+#addAnotherBlogModal .form-default ul li a {
+    width: 230px;
+}
+
+#addAnotherBlogModal .form-default .btn-green, #addAnotherBlogModal .form-default .btn-orange, #addAnotherBlogModal .form-default .btn-red, #addAnotherBlogModal .form-default .btn-black {
+    text-align: left;
+    width: 230px;
+    cursor: default;
+}
+
+a.delete-icon {
+    background-position: -536px 0;
+    width: 44px;
+    height: 43px;
+    margin: 0;
+    float: left;
+    margin-left: 7px;
+}
+
+#addAnotherBlogModal .form-default ul li a.delete-icon {
+    margin: 0;
+    float: left;
+    margin-left: 7px;
+    font-size: 15px;
+    width: 80px;
+    height: 43px;
+    color: #e59292;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 43px;
+    border: 1px solid #e59292;
+}
+
+/* StepModal3 Modal ---------------------- */
+.stepModal3 .form-default ul li a {
+    width: 200px !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 5px 0 0 !important;
+}
+
+/* forgotPasswordInfo Modal ---------------------- */
+#forgotPasswordInfo .modal-footer {
+    padding: 20px 0;
+}
+
+#forgotPasswordInfo .modal-header, #forgotPassword .modal-header, #editEmail .modal-header {
+    padding-top: 28px;
+}
+
+#forgotPasswordInfo .modal-title, #forgotPassword .modal-title, #editEmail .modal-title {
+    margin-bottom: 10px;
+}
+
+#forgotPasswordInfo {
+    z-index: 9999;
+}
+
+/* forgotPassword Modal ---------------------- */
+#forgotPassword .form-default li, #editEmail .form-default li {
+    margin-bottom: 30px;
+}
+
+#forgotPassword .modal-body, #editEmail .modal-body {
+    padding-bottom: 0;
+}
+
+/* Edit Email Modal ---------------------- */
+#editEmail {
+    padding-top: 105px;
+}
+
+/* Success Modal ---------------------- */
+.success-window .modal-body {
+    background: #fff;
+}
+
+#successModal .modal-body, .success-window .modal-body {
+    padding: 40px 55px;
+    border-top: 5px solid #00a7ad;
+    text-align: center;
+}
+
+#successModal .modal-dialog, .success-window .modal-dialog {
+    top: 43%;
+    left: 50%;
+    margin-top: -107px;
+    margin-left: -208px;
+    position: absolute;
+}
+
+#successModal p, .success-window p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+    margin-bottom: 20px;
+    width: 240px;
+    float: right;
+    text-align: left;
+}
+
+/* Invite & Apply Campaign Modal ---------------------- */
+#inviteCampaign .modal-body, #applyCampaign .modal-body {
+    padding-bottom: 40px;
+}
+
+#inviteCampaign .form-default ul {
+    width: 88%;
+    margin: 0 auto;
+}
+
+#inviteCampaign .form-default input[type="text"] {
+    width: 100%;
+    float: left;
+}
+
+#applyCampaign .form-default input[type="text"] {
+    width: 100%;
+    float: none;
+}
+
+#inviteCampaign .select-campaign {
+    float: none;
+    margin-top: 0;
+    margin-right: 0;
+    margin: 0 auto 26px;
+    width: 90%;
+}
+
+#inviteCampaign .form-default .blog-charges .textBlog, #inviteCampaign .form-default .blog-charges .videoBlog, #inviteCampaign .form-default .blog-charges .socialBlog {
+    width: 100%;
+    margin: 0 auto 20px;
+}
+
+#inviteCampaign .select-campaign .selectbox {
+    width: 90%;
+}
+
+#inviteCampaign .form-default li.blog-charges .selectbox {
+    width: 85px;
+}
+
+#inviteCampaign .form-default .note, #applyCampaign .form-default .note {
+    text-align: left;
+    padding-left: 0;
+    padding-bottom: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 0;
+}
+
+#applyCampaign .form-default .amt-field {
+    margin-bottom: 10px;
+}
+
+#inviteCampaign .form-default .textBlog, #applyCampaign .form-default .textBlog {
+    margin-bottom: 15px;
+}
+
+#inviteCampaign .checkboxDiv, #applyCampaign .checkboxDiv {
+    width: 150px;
+    margin-left: -36px;
+    position: relative;
+}
+
+#applyCampaign .checkboxDiv {
+    width: 200px;
+}
+
+#inviteCampaign .form-default ul li, #applyCampaign .form-default ul li {
+    margin-bottom: 25px;
+}
+
+#inviteCampaign .form-default .amt-field input[type="text"], #applyCampaign .form-default .amt-field input[type="text"] {
+    font-size: 16px;
+    color: #555555;
+    padding: 5px 15px;
+}
+
+#applyCampaign .form-default ul li .textBlog, #applyCampaign .form-default ul li .videoBlog, #applyCampaign .form-default ul li .socialBlog {
+    width: 458px;
+    margin: 0 auto 15px;
+}
+
+#applyCampaign .form-default p {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* View All Comments Modal ---------------------- */
+#viewCommentsModal .modal-dialog, #viewTopicModel .modal-dialog, #assignTopicModel .modal-dialog {
+    width: 702px;
+    margin-top: 130px;
+}
+
+#viewCommentsModal .modal-header, #viewTopicModel .modal-header, #assignTopicModel .modal-header {
+    padding-bottom: 0;
+    min-height: 37px;
+    padding-top: 15px;
+}
+
+#viewCommentsModal .modal-body, #viewTopicModel .modal-body, #assignTopicModel .modal-body {
+    padding-top: 0;
+    margin-bottom: 40px;
+}
+
+#viewCommentsModal .form-default ul {
+    margin-bottom: 30px;
+}
+
+#viewCommentsModal .form-default li {
+    border-bottom: 1px solid #e1e1e1;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#viewCommentsModal .form-default h2 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #555555;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+#viewCommentsModal .form-default p, #viewTopicModel p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #707070;
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+/* Testimonial Modal ---------------------- */
+#testimonialModal .modal-dialog {
+    margin-top: 130px;
+}
+
+#testimonialModal .modal-body {
+    padding-bottom: 40px;
+}
+
+#testimonialModal textarea {
+    width: 100%;
+    font-size: 14px;
+}
+
+#testimonialModal .subHeading {
+    color: #707070;
+    line-height: 30px;
+}
+
+#testimonialModal .star-ratings-sprite {
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    left: 0;
+    top: -46px;
+}
+
+/* Work Order Modal ---------------------- */
+#workOrderModal .modal-dialog, #summaryModal .modal-dialog, #transactionSummaryModal .modal-dialog {
+    margin-top: 70px;
+    width: 780px;
+    background: url("../images/work-order-bg.png") repeat-y left top;
+}
+
+#workOrderModal .modal-content, #summaryModal .modal-content, #transactionSummaryModal .modal-content {
+    background: transparent;
+    padding: 0 35px;
+}
+
+#workOrderModal .modal-body, #summaryModal .modal-body, #transactionSummaryModal .modal-body {
+    padding-bottom: 40px;
+    background: transparent;
+}
+
+#workOrderModal .modal-header, #summaryModal .modal-header, #transactionSummaryModal .modal-header {
+    padding-bottom: 0;
+    background: transparent;
+}
+
+#workOrderModal .subHeading, #summaryModal .subHeading, #shareModal .subHeading, #transactionSummaryModal .subHeading {
+    color: #707070;
+    line-height: 30px;
+}
+
+#workOrderModal li, #summaryModal li, #transactionSummaryModal li {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#summaryModal li.last, #transactionSummaryModal li.last {
+    margin-bottom: 40px;
+}
+
+#workOrderModal li.last {
+    border-bottom: none;
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+
+#workOrderModal .section, #summaryModal .section, #transactionSummaryModal .section {
+    width: 190px;
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    position: relative;
+}
+
+#workOrderModal .section.middle, #summaryModal .section.middle, #transactionSummaryModal .section.middle {
+    width: 225px;
+}
+
+#workOrderModal span, #summaryModal span, #transactionSummaryModal span {
+    font-size: 14px;
+    line-height: 18px;
+    color: #707070;
+}
+
+#workOrderModal .blogCount, #workOrderModal .blogCount .count {
+    font-size: 16px;
+    color: #707070;
+    line-height: 36px;
+    margin-bottom: 0;
+}
+
+#workOrderModal .blogCount {
+    padding-right: 5px;
+}
+
+#workOrderModal .blogCount .count {
+    font-weight: 600;
+}
+
+#workOrderModal .blogCount #socialPrice.count {
+    font-weight: 400;
+}
+
+#workOrderModal .section span, #workOrderModal .section a, #summaryModal .section span, #summaryModal .section a, #transactionSummaryModal .section span, #transactionSummaryModal .section a {
+    display: block;
+}
+
+#workOrderModal .section span.title, #summaryModal .section span.title, #transactionSummaryModal .section span.title {
+    font-weight: 700;
+}
+
+#workOrderModal .section a, #summaryModal .section a, #transactionSummaryModal .section a {
+    color: #0086e4;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.campaign-name {
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#summaryModal .section, #transactionSummaryModal .section {
+    width: 30%;
+}
+
+#summaryModal .section.earning-summary {
+    width: 35%;
+}
+
+#transactionSummaryModal .section.earning-summary {
+    width: 60%;
+}
+
+#summaryModal li.last .section, #transactionSummaryModal li.last .section {
+    padding-bottom: 25px;
+}
+
+#summaryModal .section.pull-right {
+    width: 55%;
+}
+
+#transactionSummaryModal .section.pull-right {
+    width: 30%;
+    margin-top: 50px;
+}
+
+#summaryModal .section .title, #summaryModal .section .title span, #summaryModal .section .amt,
+#transactionSummaryModal.section .title, #transactionSummaryModal .section .title span, #transactionSummaryModal .section .amt {
+    color: #707070;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    display: inline-block;
+}
+
+#summaryModal .section .title > span, #transactionSummaryModal .section .title > span {
+    margin-right: 10px;
+}
+
+#summaryModal .section .title span.amt, #transactionSummaryModal .section .title span.amt {
+    width: auto;
+}
+
+#workOrderModal .metadata, #summaryModal .metadata, #transactionSummaryModal .metadata {
+    line-height: 30px;
+    font-size: 24px;
+    color: #555555;
+    font-weight: 400;
+}
+
+#workOrderModal .status-view, #summaryModal .status-view, #transactionSummaryModal .status-view {
+    width: 143px;
+    height: 143px;
+    border: 2px solid #0086e4;
+    padding: 5px;
+    position: absolute;
+    left: 20px;
+    top: -15px;
+    background: url("../images/stamp-bg.png") no-repeat 0 0;
+}
+
+#workOrderModal .status-view-inner, #summaryModal .status-view-inner, #transactionSummaryModal .status-view-inner {
+    width: 129px;
+    height: 129px;
+    border: 1px solid #0086e4;
+    color: #0086e4;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    display: table;
+}
+
+#workOrderModal .status-view-inner .text, #summaryModal .status-view-inner .text, #transactionSummaryModal .status-view-inner .text {
+    font-weight: 700;
+    font-size: 18px;
+    color: #0086e4;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Edit Work Order ---------------------- */
+#workOrderModal .topic {
+    color: #707070;
+    font-size: 16px;
+    line-height: 36px;
+    float: left;
+    margin: 0 10px 0 0px;
+    position: relative;
+    vertical-align: middle;
+}
+
+#workOrderModal .topic a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    top: 3px;
+    white-space: nowrap;
+    width: 185px;
+}
+
+#workOrderModal .topic span {
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    margin-top: 9px;
+}
+
+#workOrderModal ul.campaign-filters {
+    margin: 0 0 15px 0;
+    float: left;
+}
+
+#workOrderModal ul.campaign-filters li {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+#workOrderModal ul.campaign-filters li a {
+    background: #fff;
+}
+
+#workOrderModal #new-field {
+    clear: both;
+}
+
+#workOrderModal .note {
+    margin-top: 10px;
+}
+
+#workOrderModal #new-field, #workOrderModal .blog-charges {
+    position: relative;
+}
+
+#workOrderModal .icons {
+    width: 100px;
+    float: right;
+    margin: 4px 0 0 15px;
+}
+
+#workOrderModal .icons.icons2 {
+    float: left;
+    margin-top: 9px;
+    width: auto;
+    margin-left: 9px;
+}
+
+#workOrderModal .icons.icons2.icons3 {
+    right: 0;
+}
+
+#workOrderModal .icons .sprite {
+    margin: 0 2px;
+}
+
+#workOrderModal li > .add-field {
+    top: 4px;
+    position: relative;
+}
+
+#workOrderModal .add-field {
+    width: 18px;
+    height: 18px;
+    background-position: -335px -178px;
+    cursor: pointer;
+}
+
+#workOrderModal #first .add-field {
+    margin-top: 9px;
+    margin-left: 10px;
+}
+
+#workOrderModal .remove-field {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background-position: -357px -178px;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+#workOrderModal .update-field {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background-position: -380px -178px;
+}
+
+#workOrderModal .cancel-field {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background-position: -402px -178px;
+}
+
+#workOrderModal .blog-charges {
+    width: 90px;
+    margin: 0 7px 10px 0px;
+    float: left;
+    line-height: 35px;
+}
+
+#workOrderModal .blog-charges .input-field {
+    width: 100%;
+}
+
+#workOrderModal #new-field .blogCount {
+    line-height: 40px;
+    margin-bottom: 0;
+    position: relative;
+    padding-right: 25px;
+}
+
+#workOrderModal .blogCount .doc-icon, #workOrderModal .blogCount .music-icon {
+    float: left;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+#workOrderModal #new-field .blogCount .doc-icon, #workOrderModal #new-field .blogCount .music-icon {
+    margin-top: 12px;
+}
+
+#workOrderModal .form-default .blog-charges .textBlog .icon-rupee, #workOrderModal .form-default .blog-charges .videoBlog .icon-rupee, #workOrderModal .form-default .blog-charges .socialBlog .icon-rupee {
+    top: -2px;
+    z-index: 99;
+    height: 42px;
+}
+
+#workOrderModal .form-default .blog-charges .input-field .icon-rupee {
+    height: auto;
+    top: 12px;
+}
+
+#workOrderModal .form-default .blog-charges input[type="text"] {
+    width: 100%;
+    padding: 0px 15px 0px 25px;
+    font-size: 14px;
+    position: relative;
+    border: none;
+    height: 34px;
+    outline: none;
+}
+
+#summaryModal .status-view-inner, #transactionSummaryModal .status-view-inner {
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+#budgetModal .modal-dialog {
+    width: 402px;
+    padding-top: 130px;
+}
+
+#budgetModal .form-default {
+    width: 164px;
+    margin: 0 auto 80px;
+}
+
+#budgetModal .form-default li {
+    margin-bottom: 8px;
+}
+
+#budgetModal .form-default input {
+    width: 100%;
+}
+
+#budgetModal .form-default .btn-blue {
+    padding: 5px 20px;
+    text-align: center;
+}
+
+#budgetModal .form-default input[type="text"] {
+    font-size: 16px;
+    color: #464646;
+    padding: 8px 15px;
+}
+
+#verifyblogModel .info-icon, #addBlogModel .info-icon {
+    position: absolute;
+}
+
+#verifyblogModel #pixel-area p {
+    width: 466px;
+    margin: 0 auto 10px;
+    padding: 0;
+    text-align: left;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+/* View Topic Modal ---------------------- */
+#viewTopicModel .modal-header, #assignTopicModel .modal-header, #shareModel .modal-header {
+    background: transparent;
+    border-bottom: none;
+    padding-top: 30px;
+}
+
+#viewTopicModel .modal-body, #assignTopicModel .modal-body {
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0 30px;
+    padding: 0 0 30px;
+}
+
+#viewTopicModel .modal-footer {
+    background: transparent;
+    padding: 30px 0 40px;
+}
+
+#viewTopicModel p {
+    margin-bottom: 0;
+}
+
+#viewTopicModel .modal-dialog, #shareModal .modal-dialog {
+    margin-top: 15%;
+    width: 702px;
+}
+
+/* Assign Topic Modal ---------------------- */
+#shareModal .modal-dialog {
+    margin-top: 8%;
+}
+
+#assignTopicModel .modal-header {
+    padding-bottom: 24px;
+}
+
+#assignTopicModel .modal-dialog {
+    margin-top: 60px;
+}
+
+#assignTopicModel .modal-body {
+    padding: 0 0 10px;
+}
+
+#assignTopicModel .form-default, #shareModal .form-default {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#assignTopicModel .form-default label.default, #shareModal .form-default label.default {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+#assignTopicModel .form-default li {
+    margin-bottom: 35px;
+}
+
+/* Share Modal ---------------------- */
+#shareModal .modal-body {
+    padding-bottom: 35px;
+    padding-top: 10px;
+}
+
+#shareModal .form-default textarea, #shareModal .form-default input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
+}
+
+#shareModal .form-default textarea {
+    height: 60px;
+}
+
+#shareModal .form-default label.default {
+    text-align: left;
+    line-height: 26px;
+}
+
+#shareModal .form-default ul li {
+    margin-bottom: 20px;
+}
+
+#shareModal .social-media {
+    margin-top: 45px;
+}
+
+#shareModal .social-media a {
+    width: 49%;
+    margin-right: 10px;
+}
+
+#shareModal .social-media .btn-twitter {
+    margin-right: 0;
+}
+
+/* POKE Modal ---------------------- */
+#pokeModal .subHeading {
+    margin-top: 8px;
+}
+
+#pokeModal .form-default textarea {
+    font-size: 14px;
+    line-height: 24px;
+    width: 558px;
+}
+
+#pokeModal .form-default input[type="submit"], #pokeModal .form-default input[type="button"] {
+    min-width: 234px;
+}
+
+#pokeModal .modal-body {
+    padding: 10px 30px 25px;
+}
+
+/* VIEW BLOG DETAILS Modal ---------------------- */
+#viewBlogDetailsModal .modal-title, #spellCheckModal .modal-title {
+    font-weight: 700;
+}
+
+#viewBlogDetailsModal .modal-header, #spellCheckModal .modal-header {
+    padding: 30px 30px 0;
+}
+
+#viewBlogDetailsModal .form-default p, #spellCheckModal .form-default p {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+#viewBlogDetailsModal .form-default ul li, #spellCheckModal .form-default ul li {
+    margin-bottom: 24px;
+}
+
+.stepModal .form-default .button-type1 {
+    background: #fff;
+    border: 1px solid #0086e4;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 10px 30px;
+    text-align: center;
+    color: #0086e4;
+}
+
+.stepModal .form-default .button-type1:hover, .stepModal .form-default .button-type1:focus {
+    background: #0086e4;
+    color: #fff !important;
+}
+
+#viewBlogDetailsModal .form-default input[type="submit"], #viewBlogDetailsModal .form-default input[type="button"],
+#spellCheckModal .form-default input[type="submit"], #spellCheckModal .form-default input[type="button"] {
+    margin: 0 4px;
+    padding: 6px 30px;
+}
+
+#spellCheckSuccessModal h4 {
+    font-weight: 700 !important;
+}
+
+#spellCheckSuccessModal h4 p {
+    font-size: 14px;
+    line-height: 40px;
+    color: #707070;
+    text-align: left;
+}
+
+#spellCheckSuccessModal .modal-body {
+    padding-top: 0;
+}
+
+/* OFFLINE Modal ---------------------- */
+.paytmModal .modal-dialog {
+    width: 765px;
+    margin: 66px auto;
+}
+
+.paytmModal .modal-header {
+    background: #f5f5f5;
+    padding: 20px 30px 0 75px;
+    border-bottom: none;
+}
+
+.paytmModal .modal-body {
+    padding: 20px 30px 10px 95px;
+}
+
+#offlineModal .form-default li, .paytmModal .form-default li {
+    display: inline-block;
+    margin-bottom: 22px;
+    width: 100%;
+}
+
+.paytmModal .form-default li {
+    width: 90%;
+    margin-top: 10px;
+}
+
+#offlineModal .form-default input, .paytmModal .form-default input {
+    width: 272px;
+    float: left;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #707070;
+    height: 36px;
+    line-height: 36px;
+}
+
+#offlineModal .form-default label, .paytmModal .form-default label {
+    width: 20%;
+    font-size: 14px;
+    line-height: 36px;
+    color: #707070;
+    float: left;
+    text-align: left;
+    padding: 0;
+    font-weight: 600;
+}
+
+#offlineModal.paytmModal .form-default table label, .paytmModal .form-default table label {
+    padding: 0 11px;
+}
+
+#offlineModal .form-default label.amt-transferred, .paytmModal .form-default label.amt-transferred, .paytmModal .form-default label.service-tax {
+    line-height: 18px;
+}
+
+#offlineModal.paytmModal .form-default .button-type2, .paytmModal .form-default .button-type2 {
+    margin: 10px auto;
+    width: 165px;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    height: 43px;
+    line-height: 43px;
+    float: none;
+    display: block;
+}
+
+.paytmModal#offlineBloggerModal2 .modal-dialog {
+    width: 520px;
+}
+
+.paytmModal#offlineBloggerModal2 .modal-body {
+    padding: 10px 0;
+}
+
+.paytmModal#offlineBloggerModal2 .modal-body ul {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.paytmModal#offlineBloggerModal2 .form-default input[type="text"] {
+    width: 290px;
+    margin-left: 20px;
+}
+
+.paytmModal#offlineBloggerModal2 .form-default label {
+    width: 25%;
+}
+
+.paytmModal#offlineBloggerModal2 .form-default li {
+    width: 100%;
+    margin: 0 0 10px;
+}
+
+/* Add Tweet Modal ---------------------- */
+#addTweetModal .modal-header, #addTweetButtonModal .modal-header, #alreadyTweetModal .modal-header {
+    padding-bottom: 0;
+}
+
+#addTweetModal .modal-dialog {
+    width: 975px;
+}
+
+#addTweetModal .modal-body, #addTweetButtonModal .modal-body, #alreadyTweetModal .modal-body {
+    padding-top: 0;
+    padding-bottom: 30px;
+}
+
+#addTweetModal .form-default ul li {
+    margin-bottom: 25px;
+}
+
+#addTweetModal .form-default ul li.pull-left {
+    width: 53%;
+}
+
+#addTweetModal .form-default ul li.pull-right {
+    width: 44%;
+}
+
+#addTweetModal .form-default {
+    padding: 0 20px;
+}
+
+#addTweetModal .form-default p.note {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 5px;
+    color: #555555;
+    text-align: left;
+    padding: 0;
+}
+
+#addTweetModal .form-default label, #addTweetModal .form-default label p {
+    font-size: 16px;
+    line-height: 29px;
+    margin-bottom: 8px;
+    color: #555555;
+    text-align: left;
+    float: left;
+}
+
+#addTweetModal .form-default label p {
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+#addTweetModal .form-default textarea {
+    width: 100%;
+    height: auto;
+}
+
+#addTweetModal .form-default .textarea span {
+    top: 15px;
+}
+
+#addTweetModal .checkboxDiv {
+    display: block;
+    width: auto;
+    margin-top: 30px;
+}
+
+#addTweetModal .checkboxDiv label {
+    padding-left: 20px;
+}
+
+#addTweetModal .your-tweet-area {
+    margin-top: 40px;
+}
+
+#addTweetModal .form-default li.tweet-schedule {
+    width: 170px;
+}
+
+#addTweetModal .form-default input[type="text"] {
+    float: left;
+    font-size: 14px;
+    width: 158px;
+}
+
+#addTweetModal .form-default input.timepicki-input {
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    color: #616060;
+    padding: 0;
+    text-align: center;
+    height: auto;
+    float: none;
+}
+
+#addTweetModal ul.ruleList li {
+    margin-bottom: 0px;
+    position: relative;
+}
+
+#addTweetModal ul.ruleList li .rule {
+    float: left;
+    text-align: left;
+    width: 88%;
+}
+
+#addTweetModal h4.rules {
+    line-height: 32px;
+    color: #464646;
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-left: 2px;
+}
+
+#addTweetModal h4.rules .rules-icon {
+    margin-bottom: -8px;
+    margin-right: 10px;
+}
+
+#addTweetModal ul.ruleList {
+    margin-bottom: 14px;
+}
+
+#addTweetModal .modal-header .button-type1 {
+    width: 125px;
+    height: 36px;
+    line-height: 36px;
+    margin: 10px 1px 0;
+    padding: 0;
+    float: left;
+    font-size: 14px;
+}
+
+#addTweetModal .modal-header .button-type1.active {
+    background: #0086e4;
+    color: #fff;
+}
+
+#addTweetModal .form-default ul li .add-photo {
+    float: left;
+    width: 140px;
+    font-size: 16px;
+    line-height: 40px;
+    background: #eeeced;
+    padding: 0;
+    border: none;
+    font-weight: 400;
+    color: #555555;
+    margin: 10px 0;
+}
+
+ul.ruleList li .rule a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 195px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 5px;
+    vertical-align: bottom;
+}
+
+ul.ruleList .slides, .rules-field .slides {
+    position: relative;
+    width: 375px !important;
+    height: 90px !important;
+    background: #eeeded;
+    margin-top: 32px;
+}
+
+.rules-field .slides {
+    width: 100% !important;
+    height: 176px !important;
+    margin-top: 1px;
+}
+
+#nav {
+    position: absolute;
+    right: 0;
+    bottom: -17px;
+}
+
+#nav a {
+    margin: 0 0 0 5px;
+    color: #464646;
+}
+
+#nav a.activeSlide {
+    border-bottom: 1px solid #464646;
+}
+
+ul.ruleList .slides .slide, .last-tweet-content, .rules-field .slides .slide {
+    width: 375px !important;
+    height: 70px !important;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 20px;
+    color: #464646;
+    font-weight: 600;
+    padding: 14px 40px;
+    word-break: break-all;
+    text-align: left;
+}
+
+.rules-field .slides .slide {
+    width: 100% !important;
+    height: 176px !important;
+    padding: 20px;
+}
+
+.rules-field .slides .slide .photo-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.rules-field .slides .slide .photo-box {
+    width: 272px;
+    height: 136px;
+    border: none;
+}
+
+.rules-field .slides .slide .photo-box img {
+    width: 100%;
+    height: 136px;
+}
+
+.rules-field a.previous-btn, .rules-field a.next-btn {
+    top: 50%;
+    margin-top: -16px;
+}
+
+.rules-field a.previous-btn {
+    left: 5px;
+}
+
+.rules-field a.next-btn {
+    right: -6px;
+}
+
+a.previous-btn {
+    color: #464646;
+    line-height: 33px;
+    font-size: 14px;
+    height: 33px;
+    width: 20px;
+    position: absolute;
+    left: 15px;
+    top: 66px;
+    display: block;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+a.next-btn {
+    color: #464646;
+    line-height: 33px;
+    font-size: 14px;
+    height: 33px;
+    width: 20px;
+    position: absolute;
+    right: 3px;
+    top: 66px;
+    display: block;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.last-tweet-content {
+    background: #eeeded;
+    margin-top: 32px;
+    height: auto !important;
+}
+
+#addTweetModal .form-default li.schedule-tweet-btn {
+    clear: both;
+    margin-top: 10px;
+    height: 42px;
+}
+
+#addTweetModal .form-default .schedule-tweet-btn .button-type2 {
+    line-height: 20px;
+    padding: 5px 30px;
+    margin-top: 30px;
+}
+
+/* Brand Payment Summary Modal ---------------------- */
+#collectionresponsenew-page .summary .column1 {
+    width: 55%;
+    border-bottom: 1px solid #ccc;
+}
+
+#defaultcollection-page .summary .column1 {
+    width: 55%;
+}
+
+#collectionresponsenew-page .summary .column2, #defaultcollection-page .summary .column2 {
+    margin-top: 55px;
+    width: 190px;
+}
+
+#collectionresponsenew-page #summaryModal li.last {
+    border-bottom: none;
+}
+
+#collectionresponsenew-page .summary .column2 span.title, #defaultcollection-page .summary .column2 span.title, #collectionresponse-page .summary .column2 span.title, #transactionSummaryModal .section .title {
+    line-height: 20px;
+}
+
+#collectionresponsenew-page .summary .section .title > span, #defaultcollection-page .summary .section .title > span, #collectionresponse-page .summary .title span, #transactionSummaryModal .section .title span {
+    min-width: 145px;
+}
+
+#collectionresponsenew-page .summary .title span.amt, #defaultcollection-page .summary .title span.amt, #collectionresponse-page .summary .title span.amt, #transactionSummaryModal .section .title span.amt {
+    margin-right: 0;
+    text-align: right;
+}
+
+#defaultcollection-page .summary .checkboxDiv {
+    width: auto;
+    position: relative;
+    float: none;
+    display: inline;
+}
+
+#defaultcollection-page .summary .checkboxDiv input[type="checkbox"] {
+    position: absolute;
+    margin: 0;
+}
+
+#defaultcollection-page .summary .checkboxDiv label {
+    padding-left: 30px;
+    vertical-align: middle;
+}
+
+#defaultcollection-page .summary .title {
+    display: block;
+}
+
+#defaultcollection-page .summary .section .title > span.amt, #collectionresponse-page .summary .section .title > span.amt, #transactionSummaryModal .section .title > span.amt {
+    min-width: inherit;
+    float: right;
+}
+
+/* Apply TDS Modal ---------------------- */
+#applyTDSModal .modal-title {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#applyTDSModal .modal-body {
+    position: relative;
+    padding: 0px 30px 40px;
+}
+
+#applyTDSModal .modal-body .form-default ul {
+    text-align: center;
+}
+
+#applyTDSModal .modal-body .form-default ul li {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+#applyTDSModal .form-default a {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    width: 142px;
+    padding: 0 25px;
+    line-height: 50px;
+    height: 51px;
+}
+
+/* TNC Modal ---------------------- */
+#tncModal {
+    background: rgba(0, 0, 0, .8);
+}
+
+#tncModal .modal-dialog {
+    padding-top: 12%;
+    width: 442px;
+}
+
+#tncModal .modal-body {
+    padding: 0;
+}
+
+#tncModal .modal-body li {
+    margin: 0;
+}
+
+#tncModal .modal-body li:first-child {
+    padding: 45px 25px 45px;
+}
+
+#tncModal .modal-body li:last-child {
+    background: #e1e1e1;
+    padding: 20px 0 18px;
+    text-align: center;
+}
+
+#tncModal .form-default .signup-check .checkboxDiv {
+    width: 100%;
+    margin-left: 0;
+}
+
+#tncModal .form-default input[type="submit"].disabled {
+    background: #cbc9c9;
+}
+
+#tncModal .checkboxDiv input[type=checkbox] {
+    position: absolute;
+    margin: 0;
+}
+
+#summaryModal .collectionresponse .column1 {
+    width: 60%;
+}
+
+#summaryModal .collectionresponse .column2 {
+    width: 30%;
+    height: auto;
+    margin-top: 32px;
+}
+
+/* Advanced Search Modal ---------------------- */
+.advanced-search, .reset-search {
+    float: right;
+    font-size: 14px;
+    line-height: 15px;
+    color: #707070;
+    font-weight: 400;
+    margin-right: 15px;
+    margin-top: 11px;
+}
+
+.advanced-search:hover, .reset-search:hover {
+    text-decoration: underline;
+}
+
+.reset-search:focus {
+    color: #707070;
+}
+
+.advanced-search:focus {
+    color: #707070;
+}
+
+.advanced-search span {
+    display: inline-block;
+    color: #707070;
+}
+
+.search-only-case {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.filterModal .search-only-case .checkboxDiv {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.search-only-case .checkboxDiv input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    opacity: 0;
+    position: absolute;
+    margin: 0px;
+}
+
+.filterModal .search-only-case .checkboxDiv label {
+    line-height: 23px;
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 30px;
+}
+
+.filterModal .radioDiv input[type="radio"] {
+    position: absolute;
+    left: 6px;
+    margin: 0;
+    top: 4px;
+}
+
+.filterModal .modal-dialog.expandWidth .radioDiv input[type="radio"] {
+    left: 11px;
+}
+
+.filterModal .checkboxDiv input[type="checkbox"] {
+    position: absolute;
+    margin: 0;
+}
+
+/* Input Slider Modal ---------------------- */
+.filterModal .form-default .filtered-section ul li.input-slider {
+    margin-bottom: 10px;
+}
+
+.form-default .input-slider label {
+    font-size: 11px;
+    line-height: 14px;
+    color: #acacac;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.form-default .input-slider .blog-charges {
+    width: 80px;
+    margin: 0 5px 5px;
+
+}
+
+.form-default .input-slider .blog-charges .input-field {
+    width: 100%;
+}
+
+.form-default .input-slider .blog-charges .textBlog .icon-rupee {
+    width: 24px;
+    height: auto;
+    line-height: 29px;
+    font-size: 11px;
+    color: #acacac;
+    font-weight: 400;
+}
+
+.form-default .input-slider .blog-charges input {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 76px;
+    font-size: 11px;
+    padding-left: 20px;
+    padding-right: 9px;
+}
+
+.lessPL {
+    padding-left: 9px !important;
+}
+
+.form-default .input-slider .blog-charges .input-wrapper {
+    position: relative;
+}
+
+.marginBtm0 {
+    margin-bottom: 0 !important;
+}
+
+.filterModal .form-default .filtered-section .slider-range .search-only-case {
+    margin-top: 25px;
+}
+
+.search-only-case.scores {
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.filterModal .modal-header .close {
+    margin-top: 11px;
+}
+
+#filterModalAll .form-default .select2-container, #filterModalBlogger .select2-container, #filterModalCampaign .select2-container {
+    padding-bottom: 0;
+}
+
+.filterModal .social-sub-tabs .checkboxDiv {
+    width: 130px;
+}
+
+.filterModal .campaignStates .checkboxDiv {
+    width: 149px !important;
+}
+
+/* Advanced Search Filter ---------------------- */
+.filterModal .modal-dialog {
+    margin-top: 30px;
+}
+
+.filterModal .modal-dialog.expandWidth .form-default ul.filter-list {
+    width: 274px;
+    float: left;
+    /* background: url("../images/search-divider-line.png") no-repeat left top;*/
+    border-left: 1px solid #ddd;
+    margin-left: 20px;
+    padding-left: 20px;
+    min-height: 850px;
+}
+
+#filterModalBlogger .modal-dialog.expandWidth .form-default ul.filter-list {
+    min-height: 660px;
+}
+
+.filterModal .modal-dialog.expandWidth .form-default ul.filter-list:first-of-type {
+    /*  background: none;*/
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.filterModal .modal-dialog.expandWidth .search-for-all .radioDiv input[type="radio"] + span:before, .filterModal .modal-dialog.expandWidth .search-for-all .radioDiv input[type="radio"] + label:before {
+    margin-left: 0;
+}
+
+.filterModal .modal-dialog.expandWidth .search-for-all .radioDiv .sprite {
+    margin-left: 0;
+}
+
+.filterModal .modal-dialog.expandWidth .checkboxDiv label .sprite {
+    margin-right: 2px;
+}
+
+.filterModal .modal-dialog.expandWidth .social-sub-tabs .checkboxDiv label {
+    margin-left: 2px;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+.modal-dialog .advanced-search:hover, .reset-search:hover {
+    color: #0086e4;;
+}
+
+.modal-dialog .advanced-search:hover {
+    text-decoration: underline;
+}
+
+/* VERIFY button in front of self-bosted title ---------------------- */
+#addAnotherBlogModal .form-default ul li a.button-small {
+    float: left;
+    line-height: 43px;
+    height: 43px;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 76px;
+    font-size: 14px;
+    margin-left: 7px;
+}
+
+#addAnotherBlogModal .form-default ul li a {
+    float: left;
+}
+
+#addAnotherBlogModal .form-default ul li {
+    width: 100% !important;
+    margin-right: 0;
+}
+
+.filterModal ul li > label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.filterModal ul li .inner-heading {
+    font-size: 14px;
+    font-weight: 600;
+    color: #707070;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.filterModal ul li .inner-heading:hover {
+    text-decoration: underline;
+}
+
+.filterModal ul li .inner-heading.avg-rating:hover {
+    text-decoration: none;
+}
+
+.filterModal .accordion .social-sub-tabs .checkboxDiv {
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.filterModal .accordion .social-sub-tabs .checkboxDiv input[type=checkbox] {
+    width: 55%;
+}
+
+#filterModalAll .social-sub-tabs.all-filters-field .checkboxDiv input[type=checkbox] {
+    width: 94%;
+}
+
+/*.filterModal .accordion .pane {
+    display: none;
+}
+
+.filterModal .accordion .pane.active {
+    display: block;
+}*/
+
+.filterModal .input-slider {
+    margin-bottom: 10px;
+    top: -10px;
+    position: relative
+}
+
+.filterModal rzslider {
+    margin: 20px 0 30px 0;
+}
+
+rzslider .rz-bubble {
+    display: none;
+}
+
+.filtered-section .search-only-case {
+    margin-bottom: 10px;
+    top: -20px;
+}
+
+/* Success Blog Modal ---------------------- */
+#successBlogModal .modal-dialog {
+    width: 700px;
+    top: 15%;
+    left: 25%;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#successBlogModal p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+    margin-bottom: 20px;
+    width: 90%;
+    float: right;
+    padding-left: 0;
+    border-bottom: none;
+}
+
+#successBlogModal p strong {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+#successBlogModal .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+/* Tweets Modal ---------------------- */
+.tweet-button {
+    text-align: center;
+    margin-top: 0;
+}
+
+.tweet-button .button-type2 {
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 7px 30px;
+}
+
+.tweet-button span {
+    font-size: 16px;
+    color: #b6b6b6;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+}
+
+.tweet-button span:after {
+    content: "";
+    position: absolute;
+    content: "";
+    right: auto;
+    bottom: 0;
+    left: 0;
+    top: 14px;
+    height: 1px;
+    width: 40%;
+    border-top: 1px solid #b6b6b6;
+}
+
+.tweet-button span:before {
+    content: "";
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 14px;
+    height: 1px;
+    width: 40%;
+    border-top: 1px solid #b6b6b6;
+}
+
+.tweet-button-option{
+    width: 50%;
+    padding: 0 9%;
+    display: inline-block;
+    border-right: 1px solid #ccc;
+}
+
+.already-retweeted-option{
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 6%;
+}
+
+.disable,.disable:hover {
+    background: #cecece !important;
+    border-color: #cecece !important;
+    color: #bcb8b8 !important;
+    cursor: default;
+    pointer-events: none;
+}
+
+#addTweetButtonModal .modal-dialog,
+#alreadyTweetModal .modal-dialog {
+    width: 630px;
+}
+
+.already-tweet {
+    text-align: center;
+}
+
+.already-tweet input[type="text"] {
+    width: 90% !important;
+    display: block;
+    padding: 0 15px !important;
+    border: 1px solid #eaeaea;
+    font-size: 14px !important;
+    line-height: 20px;
+    color: #c5c0c0 !important;
+    margin:10px auto 30px !important;
+}
+
+
+/* facebook Modal ---------------------- */
+#fb-options.stepModal .modal-dialog {
+    width: 506px;
+}
+
+.facebook-button {
+    text-align: center;
+    margin-top: 0;
+}
+
+.facebook-button .button-type2 {
+    margin: 30px 10px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 7px 30px;
+}
+
+.facebook-button span {
+    font-size: 16px;
+    color: #b6b6b6;
+    position: relative;
+    height: 84px;
+    line-height: 84px;
+    display: inline-block;
+}
+
+.facebook-button span:after {
+    position: absolute;
+    content: "";
+    right: auto;
+    bottom: 0;
+    left: 10px;
+    top: 0;
+    height: 35%;
+    width: 40%;
+    border-left: 1px solid #b6b6b6;
+}
+
+.facebook-button span:before {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    left: 10px;
+    height: 35%;
+    width: 100%;
+    border-left: 1px solid #b6b6b6;
+}
+
+/* Edit tweet Duration */
+
+#editTweetDuration{}
+#editTweetDuration .modal-dialog {
+    width: 550px;
+}
+#editTweetDuration .modal-header{
+    background: none;
+    border-bottom: none;
+}
+
+#editTweetDuration ul.tweet-schedule li {
+    float: left;
+    margin-right: 0px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+#editTweetDuration li.schedule-section ul {
+    display: inline-block;
+    width: 165px;
+    margin: 0 17px;
+    vertical-align:top;
+}
+#editTweetDuration .form-default .date input[type="text"] {
+    width: 100%;
+}
+
+#editTweetDuration ul.tweet-schedule span.lable {
+    bottom: -15px;
+    display: block;
+    float: left;
+}
+#editTweetDuration ul.tweet-schedule {
+    margin-top: 0;
+    border-bottom: none;
+}
+#editTweetDuration .modal-footer {
+    padding: 0 0 30px;
+    background: none;
+}
+
+
+/* Filter Influencers */
+
+.searchfliter.filterModal .modal-dialog {
+    margin-top: 3px;
+}
+.searchfliter.filterModal .modal-header{
+    padding: 7px 20px 0 !important;
+}
+
+.searchfliter .modal-title{
+    margin-bottom: 7px;
+    line-height: 40px;
+    font-size: 20px;
+}
+.searchfliter.filterModal .modal-body {
+    padding: 10px 20px 10px;
+}
+
+.searchfliter.filterModal ul li > label {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 17px;
+    margin: 0 0 5px;
+}
+
+.searchfliter.filterModal .form-default .filtered-section li span{
+    font-weight:600;
+}
+.searchfliter .form-default .selectbox select{
+    font-size: 11px;
+    line-height: 16px;
+}
+.searchfliter.filterModal .social-sub-tabs {
+    margin-bottom: 6px;
+    margin-top: 0px;
+}
+
+
+
+.searchfliter.filterModal .form-default .selectbox {
+    width: auto;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+.searchfliter .select2-container-multi .select2-choices{
+    background: none;
+}
+
+.searchfliter .form-default .selectbox select{
+    height: 27px !important;
+}
+
+.searchfliter.filterModal .checkboxDiv input[type=checkbox] {
+    width: 17px;
+    height: 14px;
+}
+
+.searchfliter.filterModal .checkboxDiv label{
+    background: url('checkbox1.jpg') no-repeat 0 0;
+}
+
+.searchfliter.filterModal .checkboxDiv.checked label {
+    background-position: 0 -14.5px;
+}
+
+.searchfliter.filterModal .social-sub-tabs .checkboxDiv label{
+    line-height: 12px !important;
+    padding-left: 20px;
+}
+
+.searchfliter.filterModal .checkboxDiv label{
+    height: 13px;
+}
+
+.searchfliter .form-default .selectbox span:after {
+    background: #fff url(icon-select.png) no-repeat center 10px;
+    height: 22px;
+}
+.searchfliter.filterModal .modal-dialog.expandWidth .social-sub-tabs.recommended-influencer-check .checkboxDiv label{
+    font-size: 11px;
+}
+.searchfliter .form-default .form-control{
+    font-size:11px;
+    line-height: 16px;
+}
+
+.searchfliter .filtered-section .search-only-case {
+    margin-bottom: -5px;
+    top: -11px;
+}
+
+.searchfliter .search-only-case{
+    margin-bottom: 0;
+}
+
+.searchfliter.filterModal .form-default .filtered-section {
+    margin: 4px 0 0;
+}
+
+.searchfliter.filterModal .form-default input[type="submit"]{
+    margin: 0 auto 0;
+}
+
+.searchfliter.filterModal rzslider {
+    margin: 20px 0 20px 0;
+}
+.searchfliter.filterModal .form-default li{
+    margin: 5px 0;
+    line-height: 17px;
+    font-size: 13px;
+}
+.searchfliter.filterModal .form-default li span{
+    font-family: 'open sans';
+}
+.searchfliter .modal-dialog.expandWidth .form-default ul.filter-list {
+    min-height: 510px !important;
+}
+.searchfliter .filterModal .form-default input[type="submit"] {
+    width: 150px;
+    margin: 0 auto 0;
+    display: block;
+}
+
+/*.searchfliter .search-for-all .radioDiv{
+    text-align: left;
+}*/
+
+.searchfliter .form-default input[type="submit"],
+.searchfliter .form-default input[type="button"],
+.searchfliter .form-default a.btn-blue, .form-default .btn-navy {
+    height: 30px;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.searchfliter.filterModal .input-slider{
+    margin-bottom: 0;
+}
+
+.searchfliter.filterModal .checkboxDiv {
+    margin-top: 6px;
+}
+
+.searchfliter .form-control.select2-container {
+    height: 27px !important;
+}
+.searchfliter.filterModal .form-default li.select2-search-choice{
+    padding: 1px 4px 2px 18px;
+    margin: 3px 0;
+    line-height: 14px;
+    font-size: 10px !important;
+}
+
+.select2-container-multi .select2-choices .select2-search-field input {
+    padding: 3px !important;
+    line-height: 13px !important;
+}
+.searchfliter.filterModal .select2-search-choice-close {
+    height: 12px;
+    top: 1px;
+}
+.searchfliter.filterModal .form-default #s2id_mySel3 .select2-choices{
+    padding: 0 !important;
+}
+
+#filterModalAll.searchfliter .all-filters-field .checkboxDiv{
+    margin-bottom: 10px !important;
+}
+
+.searchfliter.filterModal .search-only-case .checkboxDiv label,
+.searchfliter.filterModal ul li .inner-heading,
+.searchfliter.filterModal .social-sub-tabs .checkboxDiv label,
+.searchfliter .radioDiv input[type="radio"] + span,
+.searchfliter .radioDiv input[type="radio"] + label{
+    font-size: 11px;
+    line-height: 14px;
+}
+
+.searchfliter.filterModal .social-sub-tabs .checkboxDiv{
+    margin: 0 0 5px;
+}
+
+.searchfliter .form-default input[type="submit"]{
+    padding: 5px 15px;
+    width: auto;
+    text-transform: capitalize;
+}
+
+.searchfliter .form-default #s2id_mySel2 .select2-choices{
+    padding:0 !important;
+}
+
+.filter-search {
+    float: right;
+    margin-right: 15px;
+    margin-top: 7px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #0086e4;
+    padding: 4px 15px;
+    text-align: center;
+    border: 1px solid #0086e4;
+    position: relative;
+    background: #ffffff;
+    vertical-align: middle;
+    text-transform: capitalize;
+}
+
+.filter-search:hover{
+    background: #0086e4;
+    color: #ffffff;
+}
+
+.modal-header p {
+    font-size: 14px;
+    color: #707070;
+    line-height: 20px;
+}
+
+/* confirm modal */
+
+#confirmAcceptMultiApp .modal-header {
+    background: #FFF;
+    padding: 20px 30px 24px 30px;
+    border-bottom: none;
+    border-top: 5px solid #00a7ad;
+}
+
+#confirmAcceptMultiApp .modal-body {
+    padding: 0px 55px;
+    border-top: none;
+    text-align: center;
+}
+
+.facebookDisconnected a.btn-facebook {
+    font-size: 13px;
+}
+
+
+
