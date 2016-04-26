@@ -10,6 +10,6 @@ class UserController {
     def login() {
         Locale locale=RequestContextUtils.getLocale(request)
         String msg=messageSource.getMessage("user.login.success.message", [] as Object[], locale)
-        render ([msg:msg] as JSON)
+        render msg
     }
 }

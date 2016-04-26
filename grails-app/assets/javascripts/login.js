@@ -10,8 +10,8 @@ $(document).ready(function () {
             "password": "required"
         },
         messages: {
-            "userName": "Please enter userName",
-            "password": "Please enter password"
+            "userName": $L('user.login.name.require'),
+            "password": $L('user.login.password.require')
         },
 
         errorPlacement: function (error, element) {
