@@ -1,0 +1,11 @@
+<plugin name='i18n-asset-pipeline' version='1.0.6' grailsVersion='2.2 &gt; *'>
+  <author>Daniel Ellermann</author>
+  <authorEmail>d.ellermann@amc-world.de</authorEmail>
+  <title>I18n Asset Pipeline Plugin</title>
+  <description>An asset-pipeline plugin for client-side i18n.  It generates JavaScript files from i18n resources for use in client-side code.</description>
+  <documentation>https://github.com/dellermann/i18n-asset-pipeline</documentation>
+  <type>I18nAssetPipelineGrailsPlugin</type>
+  <resources>
+    <resource>asset.pipeline.i18n.I18nTagLib</resource>
+  </resources>
+</plugin>
