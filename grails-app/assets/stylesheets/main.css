@@ -611,3 +611,7 @@ a.skip {
 	border: 1px solid #d53030;
 	color: #d53030;
 }
+
+.successContent ul>li{
+	font-size: 16px;
+}

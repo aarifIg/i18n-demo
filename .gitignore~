@@ -1,0 +1,28 @@
+# GRAILS files
+/target
+/target-eclipse
+/modules/admin-app/target
+/modules/frontend-app/target
+/modules/payment-gateway/target
+/modules/rest-api/target
+/modules/util-core/target
+/modules/util-core/grails-app/i18n/messages_en_US.properties
+/modules/util-core/cobertura.ser
+/modules/frontend-app/cobertura.ser
+# IDE files
+.classpath
+*.class
+.idea
+.project
+.settings
+/*.launch
+/*.tmproj
+*.log
+*.zip
+*.iml
+/out
+plugin.xml
+localconfig.groovy
+web-app/libs
+bloggersnetwork-external-config.groovy
+.bower.json

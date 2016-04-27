@@ -1,0 +1,19 @@
+# GRAILS files
+/target
+/target-eclipse
+# IDE files
+.classpath
+*.class
+.idea
+.project
+.settings
+/*.launch
+/*.tmproj
+*.log
+*.zip
+*.iml
+/out
+plugin.xml
+localconfig.groovy
+web-app/libs
+.bower.json
